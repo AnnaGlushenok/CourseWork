@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="640.0" stylesheets="@vacations.css" xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scenes.DirectorMenu.Vacations.VacationsController">
+    <TabPane fx:id="tab" prefHeight="400.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab onSelectionChanged="#display" text="Январь">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Февраль">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Март">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="670.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Апрель">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Май">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Июнь">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Июль">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Август">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="646.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Сентябрь">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Октябрь">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Ноябрь">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab onSelectionChanged="#display" text="Декабрь">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+    </TabPane>
+    <TableView fx:id="table" layoutY="29.0" prefHeight="372.0" prefWidth="640.0">
+        <columns>
+            <TableColumn fx:id="fullName" editable="false" prefWidth="199.20001220703125" text="ФИО"/>
+            <TableColumn fx:id="position" minWidth="0.0" prefWidth="198.4000244140625" text="Должность"/>
+            <TableColumn fx:id="startVacationDay" prefWidth="110.4000244140625" text="Начало отпуска"/>
+            <TableColumn fx:id="endVacationDay" prefWidth="132.0" text="Окончание отпуска"/>
+        </columns>
+    </TableView>
+</AnchorPane>

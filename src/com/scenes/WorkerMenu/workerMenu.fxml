@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0"
+            prefWidth="244.0" stylesheets="@workerMenu.css" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scenes.WorkerMenu.WorkerMenuController">
+    <Button fx:id="vacationBtn" focusTraversable="false" layoutX="57.0" layoutY="42.0" mnemonicParsing="false"
+            onAction="#showVacation" prefHeight="30.0" prefWidth="130.0" text="Отпуск" textFill="WHITE">
+        <font>
+        <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+    <Button fx:id="timetableBtn" focusTraversable="false" layoutX="57.0" layoutY="96.0" mnemonicParsing="false"
+            onAction="#showTimetable" prefHeight="30.0" prefWidth="130.0" text="Расписание" textFill="WHITE">
+        <font>
+        <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+</AnchorPane>

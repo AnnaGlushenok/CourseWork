@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@employeeStatistics.css"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.scenes.DirectorMenu.EmployeeStatistics.EmployeeStatisticsController">
+    <ComboBox fx:id="positionList" editable="true" layoutX="108.0" layoutY="14.0" prefHeight="26.0" prefWidth="238.0"
+              promptText="Должность"/>
+    <Button layoutX="367.0" layoutY="12.0" mnemonicParsing="false" onAction="#execute" prefHeight="30.0"
+            prefWidth="140.0" text="Выполнить" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+    <TableView fx:id="table" layoutY="54.0" prefHeight="346.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="fullName" prefWidth="220.0" resizable="false" text="ФИО"/>
+            <TableColumn fx:id="activeTime" minWidth="0.0" prefWidth="185.5999755859375" text="Продуктивные часы"/>
+            <TableColumn fx:id="disabilities" prefWidth="194.40008544921875" text="Отсутствия"/>
+        </columns>
+    </TableView>
+</AnchorPane>

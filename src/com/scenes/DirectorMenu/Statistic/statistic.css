@@ -1,0 +1,16 @@
+.button{
+    -fx-background-color: #9200f3;
+    -fx-cursor: HAND;
+}
+.button:hover{
+    -fx-background-color: #6702ebf3;
+}
+.combo-box:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color:#9200f3;
+}
+
+/*цвет этих фиговин*/
+.default-color0.chart-bar { -fx-bar-fill: #5203fc; }
+.default-color1.chart-bar { -fx-bar-fill: #6f03fc; }
+.default-color2.chart-bar { -fx-bar-fill: #9d03fc; }

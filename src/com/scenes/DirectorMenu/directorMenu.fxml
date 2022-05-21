@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="280.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.scenes.DirectorMenu.DirectorMenuController" stylesheets="@directorMenu.css">
+   <children>
+      <Button fx:id="positionsBtn" focusTraversable="false" layoutX="88.0" layoutY="55.0" minHeight="30.0"
+              mnemonicParsing="false" onAction="#showPositions" prefWidth="130.0" styleClass="positions.css" text="Должности"
+              textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="vacationsBtn" focusTraversable="false" layoutX="88.0" layoutY="118.0" minHeight="30.0"
+              mnemonicParsing="false" onAction="#showVacations" prefWidth="130.0" text="Отпуска" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="statisticBtn" focusTraversable="false" layoutX="88.0" layoutY="181.0" minHeight="30.0"
+              mnemonicParsing="false" onAction="#showStatistic" prefWidth="130.0" text="Статистика" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

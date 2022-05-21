@@ -1,0 +1,11 @@
+.button{
+    -fx-background-color: #9200f3;
+    -fx-cursor: HAND;
+}
+.button:hover{
+    -fx-background-color: #6702ebf3;
+}
+.combo-box:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color:#9200f3;
+}

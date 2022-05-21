@@ -1,0 +1,10 @@
+#button{
+    -fx-background-color: #F3A600;
+}
+
+#button:hover{
+    -fx-background-color: #F36B00;
+}
+.text-field:focused {
+    -fx-border-color:red;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0"
+         prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" stylesheets="@disability.css"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scenes.EconomistMenu.Disability.DisabilityController">
+    <Tab text="Запись">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="600.0">
+            <Button focusTraversable="false" layoutX="205.0" layoutY="139.0" mnemonicParsing="false" onAction="#fix"
+                    prefHeight="30.0" prefWidth="182.0" text="Зафиксировать" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0"/>
+                </font>
+            </Button>
+            <TextField fx:id="surnameTextField" focusTraversable="false" layoutX="56.0" layoutY="42.0"
+                       promptText="Фамилия"/>
+            <TextField fx:id="nameTextField" focusTraversable="false" layoutX="221.0" layoutY="42.0" promptText="Имя"/>
+            <TextField fx:id="patronymicTextField" focusTraversable="false" layoutX="388.0" layoutY="42.0"
+                       promptText="Отчество"/>
+            <TextField fx:id="absenceReasonTextField" focusTraversable="false" layoutX="56.0" layoutY="88.0"
+                       promptText="Причина отсутствия"/>
+            <DatePicker fx:id="startDateDatePicker" editable="false" focusTraversable="false" layoutX="221.0"
+                        layoutY="87.0" onAction="#changeWrite" prefHeight="26.0" prefWidth="150.0" promptText="Дата начала"/>
+            <DatePicker fx:id="endDateDatePicker" editable="false" focusTraversable="false" layoutX="387.0"
+                        layoutY="87.0" prefHeight="26.0" prefWidth="150.0" promptText="Дата окончания"/>
+        </AnchorPane>
+    </Tab>
+    <Tab text="Просмотр">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="600.0">
+            <DatePicker fx:id="startDateDatePickerWatch" editable="false" layoutX="36.0" layoutY="12.0" onAction="#changeWatch"
+                        promptText="Дата начала"/>
+            <DatePicker fx:id="endDateDatePickerWatch" layoutX="238.0" layoutY="13.0" promptText="Дата окончания"/>
+            <TableView fx:id="table" layoutX="1.0" layoutY="49.0" prefHeight="209.0" prefWidth="600.0">
+                <columns>
+                    <TableColumn fx:id="fullName" prefWidth="245.60003662109375" text="ФИО"/>
+                    <TableColumn fx:id="reason" prefWidth="147.199951171875" text="Причина"/>
+                    <TableColumn fx:id="startDisabilityDay" prefWidth="95.20001220703125" text="Дата начала"/>
+                    <TableColumn fx:id="endDisabilityDay" prefWidth="111.99993896484375" text="Дата окончания"/>
+                </columns>
+            </TableView>
+            <Button layoutX="441.0" layoutY="10.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="131.0"
+                    styleClass="disability.css" text="Найти" textFill="WHITE" onAction="#find">
+                <font>
+                    <Font name="System Bold" size="14.0"/>
+                </font>
+            </Button>
+        </AnchorPane>
+    </Tab>
+</TabPane>

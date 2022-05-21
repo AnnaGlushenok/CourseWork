@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0"
+            prefWidth="574.0" stylesheets="@addEmployee.css" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.scenes.HumanResourcesDepartmentMenu.AddEmployee.AddEmployeeController">
+   <Button focusTraversable="false" layoutX="207.0" layoutY="430.0" mnemonicParsing="false"
+           onAction="#fix" prefHeight="30.0" prefWidth="182.0" text="Зарегистрировать" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="surnameTextField" focusTraversable="false" layoutX="41.0" layoutY="59.0" promptText="Фамилия"/>
+   <TextField fx:id="nameTextField" focusTraversable="false" layoutX="211.0" layoutY="59.0" promptText="Имя"/>
+   <TextField fx:id="patronymicTextField" focusTraversable="false" layoutX="379.0" layoutY="59.0"
+              promptText="Отчество"/>
+   <TextField fx:id="loginTextField" focusTraversable="false" layoutX="129.0" layoutY="368.0" promptText="Логин"/>
+   <PasswordField fx:id="passwordField" focusTraversable="false" layoutX="302.0" layoutY="368.0"
+                  promptText="Пароль"/>
+   <TextField fx:id="telephoneTextField" focusTraversable="false" layoutX="126.0" layoutY="188.0" prefHeight="26.0"
+              prefWidth="150.0" promptText="Телефон"/>
+   <ComboBox fx:id="positionList" editable="true" focusTraversable="false" layoutX="213.0" layoutY="279.0"
+             prefWidth="150.0" promptText="Должность"/>
+   <TextField fx:id="addressTextField" focusTraversable="false" layoutX="300.0" layoutY="188.0" promptText="Адрес"/>
+   <TextField fx:id="ageTextField" focusTraversable="false" layoutX="126.0" layoutY="96.0" promptText="Возраст"/>
+   <ComboBox fx:id="timetableList" editable="true" focusTraversable="false" layoutX="381.0" layoutY="279.0"
+             prefWidth="150.0" promptText="Расписание"/>
+   <Label layoutX="108.0" layoutY="28.0" text="Данные работника">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Label>
+   <Line endX="24.79998779296875" endY="-3.814697265625E-6" layoutX="360.0" layoutY="41.0" startX="-100.0"/>
+   <Line endX="28.300003051757812" endY="7.62939453125E-6" layoutX="71.0" layoutY="41.0" startX="-41.59999465942383"
+         startY="7.62939453125E-6">
+      <stroke>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color/>
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0"/>
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </stroke>
+   </Line>
+   <Line endX="-0.09998703002929688" endY="-36.79999542236328" layoutX="29.0" layoutY="92.0" startX="-0.0999755859375"
+         startY="-50.49999237060547"/>
+   <Line endX="100.0" layoutX="447.0" layoutY="142.0" startX="-144.79998779296875" startY="7.62939453125E-6"/>
+   <Line endX="100.50006103515625" endY="-27.99999237060547" layoutX="447.0" layoutY="170.0" startX="100.50006103515625"
+         startY="-60.599998474121094"/>
+   <Label layoutX="108.0" layoutY="160.0" text="Контактные данные">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Label>
+   <Line endX="-3.60003662109375" layoutX="393.0" layoutY="173.0" startX="-130.00001525878906"/>
+   <Line endX="30.200027465820312" endY="1.52587890625E-5" layoutX="69.0" layoutY="173.0" startX="-41.59999465942383"
+         startY="7.62939453125E-6"/>
+   <Line endX="100.0" layoutX="444.0" layoutY="229.0" startX="-199.2000274658203" startY="1.52587890625E-5">
+      <stroke>
+         <LinearGradient endX="0.6742424820408677" startY="0.03409089464129824">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.9300000071525574" opacity="0.5053191781044006"/>
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.717486560344696" green="0.016599999740719795" blue="0.8299999833106995"/>
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </stroke>
+   </Line>
+   <Label layoutX="110.0" layoutY="339.0" text="Регистрация">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Label>
+   <Line endX="-3.60003662109375" layoutX="396.0" layoutY="352.0" startX="-182.6000518798828"/>
+   <Line endX="27.800003051757812" layoutX="71.0" layoutY="352.0" startX="-41.59999465942383"
+         startY="7.62939453125E-6"/>
+   <Line endX="100.0" layoutX="446.0" layoutY="408.0" startX="-144.79998779296875" startY="7.62939453125E-6"/>
+   <Line endX="100.50006103515625" endY="-27.99999237060547" layoutX="446.0" layoutY="436.0" startX="100.50006103515625"
+         startY="-40.4000244140625"/>
+   <Label layoutX="108.0" layoutY="251.0" text="Обязанности">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Label>
+   <Line endX="-3.60003662109375" layoutX="396.0" layoutY="264.0" startX="-182.6000518798828"/>
+   <Line endX="29.399978637695312" layoutX="69.0" layoutY="264.0" startX="-41.59999465942383"
+         startY="7.62939453125E-6"/>
+   <Line endX="-0.09998703002929688" endY="-36.79999542236328" layoutX="27.0" layoutY="315.0" startX="-0.0999755859375"
+         startY="-50.49999237060547"/>
+   <Line endX="100.0" layoutX="444.0" layoutY="320.0" startX="-144.79998779296875" startY="7.62939453125E-6"/>
+   <Line endX="100.50006103515625" endY="-27.99999237060547" layoutX="444.0" layoutY="348.0" startX="100.50006103515625"
+         startY="-54.4000244140625"/>
+   <ComboBox fx:id="sexList" editable="true" focusTraversable="false" layoutX="300.0" layoutY="96.0" prefWidth="150.0"
+             promptText="Пол"/>
+   <ComboBox fx:id="roleList" editable="true" focusTraversable="false" layoutX="40.0" layoutY="279.0" prefWidth="150.0"
+             promptText="Роль"/>
+</AnchorPane>
